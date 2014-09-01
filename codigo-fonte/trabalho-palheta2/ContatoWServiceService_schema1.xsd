@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://webservices.curso.com.br/" xmlns:tns="http://webservices.curso.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="excluirCpf" type="tns:excluirCpf"/>
+
+  <xs:element name="excluirCpfResponse" type="tns:excluirCpfResponse"/>
+
+  <xs:element name="inserirCpf" type="tns:inserirCpf"/>
+
+  <xs:element name="inserirCpfResponse" type="tns:inserirCpfResponse"/>
+
+  <xs:element name="procuraCpf" type="tns:procuraCpf"/>
+
+  <xs:element name="procuraCpfResponse" type="tns:procuraCpfResponse"/>
+
+  <xs:complexType name="excluirCpf">
+    <xs:sequence>
+      <xs:element name="cpf" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="excluirCpfResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="procuraCpf">
+    <xs:sequence>
+      <xs:element name="cpf" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="procuraCpfResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="inserirCpf">
+    <xs:sequence>
+      <xs:element name="cpf" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="inserirCpfResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
